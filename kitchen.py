@@ -19,6 +19,9 @@ class Quantity:
     def plus(self, other):
         return Sum(self, other)
 
+    def reduce(self, unit):
+        return self
+
 
 def grams(amount):
     return Quantity(amount, "g")
